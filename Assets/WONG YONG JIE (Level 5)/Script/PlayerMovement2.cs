@@ -13,11 +13,10 @@ public class PlayerMovement2 : MonoBehaviour
     private bool Falling = false;
     private bool Rolling = false;
 
-
-
     // Start is called before the first frame update
     void Start()
     {
+        // Get references to the Rigidbody and Animator components.
         animator = GetComponent<Animator>();
         rb = GetComponent<Rigidbody>();
     }
@@ -25,49 +24,60 @@ public class PlayerMovement2 : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space) )
+        if (Input.GetKeyDown(KeyCode.Space))
         {
+            // Apply an upward force for jumping.
             rb.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
             animator.SetBool("IsJump", true);
             Jumping = true;
             SoundManagerScript.PlaySound("jumping");
-            if (Jumping == true)
+
+            if (Jumping)
             {
+                // If Jumping, set the Falling state to true.
                 animator.SetBool("IsFall", true);
                 Falling = true;
-                if (Falling == true)
+
+                if (Falling)
                 {
+                    // If Falling, set the Landing state to true.
                     animator.SetBool("IsLand", true);
                     Landing = true;
                 }
                 else
                 {
+                    // If not Falling, reset the Jumping state.
                     animator.SetBool("IsJump", false);
                     Jumping = false; // Player is not walking
                 }
             }
             else
             {
+                // If not Jumping, reset the Jumping state.
                 animator.SetBool("IsJump", false);
                 Jumping = false; // Player is not walking
             }
         }
         else
         {
+            // If not pressing Space, reset the Jumping state.
             animator.SetBool("IsJump", false);
             Jumping = false; // Player is not walking
         }
 
-        if(Input.GetKeyDown(KeyCode.C))
+        if (Input.GetKeyDown(KeyCode.C))
         {
+            // Apply a forward force for rolling.
             rb.AddForce(transform.forward * rollForce, ForceMode.Impulse);
-            animator.SetBool("IsRoll", true);  
+            animator.SetBool("IsRoll", true);
             SoundManagerScript.PlaySound("rolling");
+            Rolling = true; // Update the Rolling state.
         }
-        if(Input.GetKeyUp(KeyCode.C))
+        if (Input.GetKeyUp(KeyCode.C))
         {
+            // When releasing C, reset the Rolling state.
             animator.SetBool("IsRoll", false);
+            Rolling = false;
         }
-
     }
 }
