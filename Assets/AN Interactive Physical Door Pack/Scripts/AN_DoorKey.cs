@@ -50,6 +50,6 @@ public class AN_DoorKey : MonoBehaviour
     }
     void UpdateKeyCounterUI()
     {
-        keyCountText.text = "Red Keys: " + hero.RedKeyCount;
+        keyCountText.text = "Keys: " + hero.RedKeyCount;
     }
 }
