@@ -57,5 +57,11 @@ public class PlayerController : MonoBehaviour
         SceneManager.LoadScene("GameOver");
 
     }
+
+    public void Healing(int healAmount)
+    {
+        currentHealth += healAmount;
+        healthBar.SetHealth(currentHealth);
+    }
 }
 
