@@ -15,14 +15,14 @@ EditorBuildSettings:
     path: Assets/AurynSky/Dungeon Pack/Scenes/DemoScene_Dungeon.unity
     guid: 0c700d79202a83b47babcb3961617407
   - enabled: 1
+    path: Assets/WONG YONG JIE (Level 2)/LEVEL 2/Scene/castleDemo.unity
+    guid: 0f30b31df1c21274da0aa193ec9e46e6
+  - enabled: 1
     path: "Assets/CHAI PING LIN (Level 3\uFF09/Blue Dungeon/Demo Blue.unity"
     guid: 6121371ee5e49ba4b94976094f280b7f
   - enabled: 1
     path: Assets/LIEW ZE KAI (Level 4)/Map_L_FG_Assets_Pack_Lite/Demo/Demo6.unity
     guid: b475c139dd123534a9c2b7cda5de4d6f
-  - enabled: 1
-    path: Assets/WONG YONG JIE (Level 2)/LEVEL 2/Scene/castleDemo.unity
-    guid: 0f30b31df1c21274da0aa193ec9e46e6
   - enabled: 1
     path: Assets/YEO KEE LIANG (Level 1)/Screens/GameOver.unity
     guid: 95e2b91baada33245a650ebc204da615
