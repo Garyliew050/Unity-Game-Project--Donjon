@@ -69,6 +69,23 @@ public class Timer : MonoBehaviour
         SceneManager.LoadScene("GameOver");
 
     }
+
+    // Add this method to your Timer script
+    public void DecreaseTime(float penaltyTime)
+    {
+        if (!isGameOver)
+        {
+            currentTime -= penaltyTime;
+
+            if (currentTime < 0)
+            {
+                currentTime = 0;
+            }
+
+            SetTimerText();
+        }
+    }
+
 }
 
 public enum TimerFormats
