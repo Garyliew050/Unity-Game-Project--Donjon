@@ -20,4 +20,4 @@ MonoBehaviour:
   spellPrefab: {fileID: 1000013317980782, guid: 2cf6690298568294cb6b655c0a3aeb87, type: 3}
   spellType: 1
   healAmount: 0
-  freezeDuration: 5
+  freezeDuration: 10
