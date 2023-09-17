@@ -49,6 +49,7 @@ public class AN_DoorScript : MonoBehaviour
 
     void Update()
     {
+        //determine the player is nearby and pressing e button
         if ( !Remote && Input.GetKeyDown(KeyCode.E) && NearView() )
             Action();
         

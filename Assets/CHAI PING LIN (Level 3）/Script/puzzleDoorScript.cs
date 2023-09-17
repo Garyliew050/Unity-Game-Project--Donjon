@@ -18,6 +18,7 @@ public class puzzleDoorScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //destroy the object when all the torch is lit up
         if(lockA &&  lockB && lockC)
         {
             Destroy(gameObject);

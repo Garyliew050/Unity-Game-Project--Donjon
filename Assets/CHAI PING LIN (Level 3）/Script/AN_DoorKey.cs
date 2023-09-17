@@ -23,6 +23,7 @@ public class AN_DoorKey : MonoBehaviour
 
     void Update()
     {
+        //function for press e to pick up key
         if (NearView() && Input.GetKeyDown(KeyCode.E))
         {
             if (isRedKey)
@@ -49,7 +50,7 @@ public class AN_DoorKey : MonoBehaviour
         else
             return false;
     }
-    void UpdateKeyCounterUI()
+    void UpdateKeyCounterUI() //update the ui when player pick up the key
     {
         keyCountText.text = "Keys: " + hero.RedKeyCount;
     }
