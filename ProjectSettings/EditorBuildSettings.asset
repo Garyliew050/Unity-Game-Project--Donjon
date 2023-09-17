@@ -24,6 +24,9 @@ EditorBuildSettings:
     path: Assets/LIEW ZE KAI (Level 4)/Map_L_FG_Assets_Pack_Lite/Demo/Demo6.unity
     guid: b475c139dd123534a9c2b7cda5de4d6f
   - enabled: 1
+    path: Assets/CHOO XINYU (Level 5)/Demo/Main.unity
+    guid: 73c22073a418e4040bd7da09943b0e50
+  - enabled: 1
     path: Assets/YEO KEE LIANG (Level 1)/Screens/GameOver.unity
     guid: 95e2b91baada33245a650ebc204da615
   - enabled: 1
