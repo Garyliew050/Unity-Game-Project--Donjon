@@ -8,6 +8,8 @@ TagManager:
   - Pad1
   - Pad2
   - Pad3
+  - Fire
+  - Enemy
   layers:
   - Default
   - TransparentFX
